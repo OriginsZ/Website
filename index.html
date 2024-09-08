@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OriginsZ Server</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/b4c726b28c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="background">
+        <div id="circle">
+            <div id="circle-glow"></div>
+            <div id="circle-inner">
+                <img src="logo.png" alt="Background Image">
+            </div>
+        </div>
+    </div>
+    
+    <div id="app">
+        <div id="nav">
+            <div id="nav-items">
+                <div class="nav-item" data-tooltip="Home" onclick="showSection('home')">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <div class="nav-item" data-tooltip="Info" onclick="showSection('info')">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="nav-item" data-tooltip="Gallery" onclick="showSection('gallery')">
+                    <i class="fa-solid fa-image"></i>
+                </div>
+                <div class="nav-item" data-tooltip="FAQ" onclick="showSection('faq')">
+                    <i class="fa-solid fa-comment"></i>
+                </div>
+                <div class="nav-item" data-tooltip="Discord" onclick="showSection('discord')">
+                    <i class="fa-brands fa-discord"></i>
+                </div>
+                <div class="nav-item" data-tooltip="Staff" onclick="showSection('staff')">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <div class="nav-item" data-tooltip="Misc" onclick="showSection('misc')">
+                    <i class="fa-solid fa-folder-open"></i>
+                </div>
+            </div>
+        </div>
+
+        <div id="sections">
+            <div id="home" class="section">
+                <header>
+                    <h1>Welcome to OriginsZ!</h1>
+                    <p>Your adventure starts here. Explore the server features, connect with our community and dive into the fun!</p>
+                </header>
+                <section class="latest-news">
+                    <h2>Latest News</h2>
+                    <article>
+                        <h3>New Website Released!</h3>
+                        <p>We've just rolled out a new website with some nice features. You're seeing it right now!</p>
+                    </article>
+                </section>
+            </div>
+            <div id="info" class="section">
+                <header>
+                    <h1>Information</h1>
+                    <p>From server details to how to connect, find all the information you need to get started!</p>
+                </header>
+                <section class="server-details">
+                    <h2>Server Details</h2>
+                    <ul>
+                        <li><strong>Version:</strong> Minecraft 1.20.2 (Fabric)</li>
+                        <li><strong>IP Address:</strong> play.originsz.xyz</li>
+                        <li><strong>Offline Mode:</strong> off</li>
+                        <li><strong>Whitelist:</strong> on</li>
+                    </ul>
+                </section>
+                <section class="how-to-connect">
+                    <h2>How to Connect</h2>
+                    <p>To join the OriginsZ Minecraft Server, follow these steps:</p>
+                    <ol>
+                        <li>Open Minecraft and go to the "Multiplayer" menu.</li>
+                        <li>Click "Add Server."</li>
+                        <li>Enter the server IP address: <strong>play.originsz.xyz</strong></li>
+                        <li>Click "Done" and then select the server from your list to join.</li>
+                    </ol><br>
+                    <p style="font-size: 0.8;"><i class="fa-solid fa-triangle-exclamation"></i> You can only enter the server if you are whitelisted!
+                </section>
+                <section class="mods-list">
+                    <h2>Mods List</h2>
+                    <p>The modpack download link can be found in the Misc (<i class="fa-solid fa-folder-open" style="font-size: small;"></i>) ‎section!</p>
+                    <ul>
+                        <li>Mod1</li>
+                        <li>AWAWWAWEWEAWEAEWAEAWEAWEAWEAWEAWE</li>
+                    </ul><br>
+                </section>
+            </div>
+
+            <!--I CANT DO THIS ANYMORE, THE GALLERY AINT WORKING-->
+            
+            
+            
+            <div id="faq" class="section">FAQ Section</div>
+            <div id="discord" class="section">Discord Section</div>
+            <div id="staff" class="section">Staff Section</div>
+            <div id="misc" class="section">Misc Section</div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
