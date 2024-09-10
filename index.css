@@ -397,3 +397,182 @@ html {
 
 
 
+#faq {
+  font-family: Gadner;
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+#faq header {
+  text-align: center;
+}
+
+#faq h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+#faq .faq-content {
+  display: grid;
+  gap: 20px;
+  
+}
+
+#faq .faq-item h2 {
+  font-size: 1.7em;
+  margin: 0;
+  color: var(--c3);
+}
+
+#faq .faq-item p {
+  font-size: 1.2em;
+  color: var(--c2);
+}
+
+
+
+/* Add to your existing CSS */
+
+/* Updated FAQ section styles */
+.faq-section {
+  margin: 5px 0; /* Reduce margin to bring sections closer */
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(119, 130, 152, 0.1);
+}
+
+.faq-header {
+  cursor: pointer;
+  background: var(--c1) ;
+  color: var(--c3);
+  padding: 10px 15px; /* Reduced padding for a more compact look */
+  border-bottom: 1px solid var(--c2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.faq-header:hover {
+  background: var(--c2);
+}
+
+.faq-header h2 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.faq-header .arrow {
+  transition: transform 0.3s;
+}
+
+.faq-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 0 15px;
+  padding-top: 0; /* Remove padding top when closed */
+  padding-bottom: 0; /* Remove padding bottom when closed */
+}
+
+.faq-body.visible {
+  max-height: 500px; /* Adjust this value based on content height */
+  padding-top: 15px; /* Add padding top when opened */
+  padding-bottom: 15px; /* Add padding bottom when opened */
+}
+
+.faq-item {
+  padding: 5px 0; /* Reduce padding between items */
+  border-bottom: 1px solid var(--c2);
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-item h3 {
+  margin: 0;
+}
+
+.faq-item p {
+  margin: 5px 0 0;
+}
+
+
+/* Adjust overall FAQ section spacing */
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adjust gap to control spacing */
+}
+
+.faq-section {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-header {
+  cursor: pointer;
+  background: var(--c1);
+  color: var(--c3);
+  padding: 10px 15px; /* Adjust padding for compact look */
+  border-bottom: 1px solid var(--c2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.faq-header:hover {
+  background: var(--c2);
+}
+
+.faq-header h2 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.faq-header .arrow {
+  transition: transform 0.3s;
+}
+
+.faq-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 0 15px;
+  padding-top: 0; /* Remove padding top when closed */
+  padding-bottom: 0; /* Remove padding bottom when closed */
+}
+
+.faq-body.visible {
+  max-height: 500px; /* Adjust based on content height */
+  padding-top: 15px; /* Add padding top when opened */
+  padding-bottom: 15px; /* Add padding bottom when opened */
+}
+
+.faq-item {
+  padding: 5px 0; /* Reduce padding between items */
+  border-bottom: 1px solid var(--c2);
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-item h3 {
+  margin: 0;
+}
+
+.faq-item p {
+  margin: 5px 0 0;
+}
